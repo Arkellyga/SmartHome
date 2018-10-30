@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference
+        android:key="button_single_color"
+        android:summary="@string/button_single_color_summary"
+        android:title="@string/button_single_color">
+    </CheckBoxPreference>
+
+    <PreferenceScreen
+        android:key="pref_screen_design"
+        android:summary="@string/button_settings_summary"
+        android:title="@string/button_settings">
+        <PreferenceCategory
+            android:key="category_hall_blue"
+            android:title="@string/button_hall_blue">
+            <yuku.ambilwarna.widget.AmbilWarnaPreference
+                android:key="button_hall_blue_color"
+                android:title="@string/button_color"/>
+            <yuku.ambilwarna.widget.AmbilWarnaPreference
+                android:key="button_hall_blue_color_off"
+                android:title="@string/button_color_off"/>
+            <Preference
+                android:title="@string/button_picture">
+                <intent android:action="net.arkellyga.action.CHANGE_BUTTON_IMAGE">
+                    <extra android:name="button" android:value="button_hall_blue_image"/>
+                </intent>
+            </Preference>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:key="category_hall_work"
+            android:title="@string/button_hall_work">
+            <yuku.ambilwarna.widget.AmbilWarnaPreference
+                android:key="button_hall_work_color"
+                android:title="@string/button_color"/>
+            <yuku.ambilwarna.widget.AmbilWarnaPreference
+                android:key="button_hall_work_color_off"
+                android:title="@string/button_color_off"/>
+            <Preference
+                android:title="@string/button_picture">
+                <intent android:action="net.arkellyga.action.CHANGE_BUTTON_IMAGE">
+                    <extra android:name="button" android:value="button_hall_work_image"/>
+                </intent>
+            </Preference>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:key="category_kitchen_light"
+            android:title="@string/button_kitchen_light">
+            <yuku.ambilwarna.widget.AmbilWarnaPreference
+                android:key="button_kitchen_light_color"
+                android:title="@string/button_color"/>
+            <yuku.ambilwarna.widget.AmbilWarnaPreference
+                android:key="button_kitchen_light_color_off"
+                android:title="@string/button_color_off"/>
+            <Preference
+                android:title="@string/button_picture">
+                <intent android:action="net.arkellyga.action.CHANGE_BUTTON_IMAGE">
+                    <extra android:name="button" android:value="button_kitchen_light_image"/>
+                </intent>
+            </Preference>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:key="category_kitchen_kettle"
+            android:title="@string/button_kitchen_kettle">
+            <yuku.ambilwarna.widget.AmbilWarnaPreference
+                android:key="button_kitchen_kettle_color"
+                android:title="@string/button_color"/>
+            <yuku.ambilwarna.widget.AmbilWarnaPreference
+                android:key="button_kitchen_kettle_color_off"
+                android:title="@string/button_color_off"/>
+            <Preference
+                android:title="@string/button_picture">
+                <intent android:action="net.arkellyga.action.CHANGE_BUTTON_IMAGE">
+                    <extra android:name="button" android:value="button_kitchen_kettle_image"/>
+                </intent>
+            </Preference>
+        </PreferenceCategory>
+        <PreferenceCategory
+            android:title="@string/background">
+            <yuku.ambilwarna.widget.AmbilWarnaPreference
+                android:key="background_color"
+                app:supportsAlpha="true"
+                android:title="@string/background_color"/>
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:summary="@string/connection_settings_summary"
+        android:title="@string/connection_settings">
+        <EditTextPreference
+            android:title="@string/server"
+            android:summary="@string/server_summary"
+            android:key="mqtt_server"/>
+        <EditTextPreference
+            android:title="@string/client_id"
+            android:summary="@string/client_id_summary"
+            android:key="mqtt_client_id"/>
+        <EditTextPreference
+            android:title="@string/username"
+            android:summary="@string/username_summary"
+            android:key="mqtt_username"/>
+        <EditTextPreference
+            android:inputType="textPassword"
+            android:title="@string/password"
+            android:summary="@string/password_summary"
+            android:key="mqtt_password"/>
+        <CheckBoxPreference
+            android:title="@string/send_retained_messages"
+            android:summary="@string/send_retained_messages_summary"
+            android:key="mqtt_retained"/>
+    </PreferenceScreen>
+    <ListPreference
+        android:title="@string/change_theme"
+        android:key="theme"
+        android:entries="@array/themes"
+        android:entryValues="@array/themes_values"/>
+</PreferenceScreen>

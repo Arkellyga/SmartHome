@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryLight">#0022ff</color>
+    <color name="colorAccentLight">#FF4081</color>
+    <color name="colorBackgroundLight">#FFF</color>
+
+    <!-- Dark theme -->
+    <color name="colorPrimary">#0027ff</color>
+    <color name="colorPrimaryDark">#0027ff</color>
+    <color name="colorAccent">#001aff</color>
+    <color name="colorBackground">#000000</color>
+    <color name="colorText">#ffffff</color>
+    <color name="colorTextSecondary">#d9d9d9</color>
+    <color name="colorTextInverse">#000000</color>
+    <color name="colorTextInverseSecondary">#d9d9d9</color>
+</resources>

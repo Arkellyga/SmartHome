@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Smart Home</string>
+    <string name="start_notification">Включить уведомление</string>
+    <string name="title_activity_settings">Smart Home</string>
+    <!--Notification-->
+    <string name="hall">Зал</string>
+    <string name="work_light">Свет над комодом</string>
+    <string name="blue_light">Свет в зале</string>
+    <string name="kitchen">Кухня</string>
+    <string name="kitchen_light">Свет на кухне</string>
+    <string name="kitchen_kettle">Чайник на кухне</string>
+    <string name="temperature">Температура</string>
+    <!---Preferences screen-->
+    <string name="button_single_color">Единый цвет</string>
+    <string name="button_single_color_summary">Использовать один цвет для всех кнопок</string>
+    <string name="button_settings">Настройки кнопок и фона</string>
+    <string name="button_settings_summary">Настроить дизайн кнопок и фона</string>
+
+    <string name="button_common_color">Общий цвет кнопок</string>
+    <string name="button_hall_blue">Основное освещение в зале</string>
+    <string name="button_hall_work">Рабочее место в зале</string>
+    <string name="button_kitchen_light">Свет в кухне</string>
+    <string name="button_kitchen_kettle">Чайник в кухне</string>
+
+    <string name="button_color">Цвет включенной кнопки</string>
+    <string name="button_color_off">Цвет выключенной кнопки</string>
+    <string name="button_picture">Изображение кнопки</string>
+
+    <string name="background">Фон</string>
+    <string name="background_color">Цвет фона</string>
+
+    <string name="connection_settings">Настройки подключения</string>
+    <string name="connection_settings_summary">Подключение к MQTT серверу</string>
+    <string name="server">Сервер</string>
+    <string name="server_summary">Сервер в формате 127.0.0.1:1883</string>
+    <string name="client_id">Имя клиента</string>
+    <string name="client_id_summary">Уникальный идентификатор для подключения к серверу</string>
+    <string name="username">Имя пользователя</string>
+    <string name="username_summary">Если не используется, оставьте поле пустым</string>
+    <string name="password">Пароль пользователя</string>
+    <string name="password_summary">Если не используется, оставьте поле пустым</string>
+    <string name="send_retained_messages">Retained сообщения</string>
+    <string name="send_retained_messages_summary">Отправлять сообщения с флагом Retained</string>
+
+    <string name="change_theme">Сменить тему приложения</string>
+    <string-array name="themes">
+        <item>Светлая</item>
+        <item>Темная</item>
+    </string-array>
+    <string-array name="themes_values">
+        <item>SmartHomeLight</item>
+        <item>SmartHome</item>
+    </string-array>
+</resources>

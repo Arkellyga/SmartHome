@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="SmartHomeLight" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SmartHome" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimaryInverse">@color/colorTextInverse</item>
+        <item name="android:textColorPrimary">@color/colorText</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+        <item name="android:textColorSecondaryInverse">@color/colorTextInverseSecondary</item>
+    </style>
+</resources>
